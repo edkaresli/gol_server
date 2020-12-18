@@ -1,0 +1,20 @@
+{
+  "name": "gol_server",
+  "version": "1.0.0",
+  "description": "A Game Of Life Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edkaresli/gol_server.git"
+  },
+  "author": "Eduard Karesli (ed.karesli@gmail.com)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/edkaresli/gol_server/issues"
+  },
+  "homepage": "https://github.com/edkaresli/gol_server#readme"
+}
