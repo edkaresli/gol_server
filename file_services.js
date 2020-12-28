@@ -21,8 +21,8 @@ class FileServices {
                 throw "Unsupported file type!";
             }
             resolve(this.fileData);
-            // console.log(this.fileData);
-            console.log("Done reading file");            
+            
+            // console.log("Done reading file");            
         });                
     }
 
@@ -42,17 +42,17 @@ class FileServices {
        });
     }
 
-    saveJSONToFile(fname, gameData) {
-        // Needs to save an array of gameData information, not a single iteration!!!
-        // I will change it later.
-        // this.fileData = gameData; 
-        // testing output:
-        this.fileData = xml2json.toJson(this.fileData);
-      //  console.log(JSON.stringify(this.fileData));
-        fs.writeFile(`./assets/${fname}`, this.fileData, err => {
-           console.error(err);
-       });
-    }
+    // saveJSONToFile(fname, gameData) {
+    //     // Needs to save an array of gameData information, not a single iteration!!!
+    //     // I will change it later.
+    //     // this.fileData = gameData; 
+    //     // testing output:
+    //     this.fileData = xml2json.toJson(this.fileData);
+    //   //  console.log(JSON.stringify(this.fileData));
+    //     fs.writeFile(`./assets/${fname}`, this.fileData, err => {
+    //        console.error(err);
+    //    });
+    // }
 
     static saveJSONAnimToFile(fname, gameIterations) {
         return new Promise((resolve) => {
@@ -63,11 +63,8 @@ class FileServices {
                 }
             });
             resolve();
-        });
-        
-    }
-
-    
+        });        
+    }    
 }
 
 module.exports = FileServices;

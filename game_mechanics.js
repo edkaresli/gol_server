@@ -1,25 +1,10 @@
 const FileServices = require('./file_services');
 
-const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require("constants");
+// const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require("constants");
 
-const TYPE = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const DEAD = 0;
 const ALIVE = 1; 
 const NO_SPECIES = 0;
-
-class GameCell {
-    species;
-    status;
-    posX;
-    posY;
-    
-    constructor(st, sp, px, py) {
-        this.status = st;
-        this.species = sp;
-        this.posX = px;
-        this.posY = py;        
-    } 
-}
 
 class Game {
     currentGame;   
@@ -211,7 +196,7 @@ class Game {
     }
 
     computeBorders(newGameData) {                        
-      //  let currentCell = this.currentGame[i][j]; 
+      
         let adjacentsList = [];        
         // For i = 0, 0 < j < n - 1
         let i = 0; 
