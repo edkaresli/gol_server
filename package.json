@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A Game Of Life Server",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/edkaresli/gol_server/issues"
   },
-  "homepage": "https://github.com/edkaresli/gol_server#readme"
+  "homepage": "https://github.com/edkaresli/gol_server#readme",
+  "dependencies": {
+    "node-expat": "^2.3.18",
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
